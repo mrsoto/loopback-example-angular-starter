@@ -49,7 +49,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
 4. **Add a sample model.**
 
-  Run `slc run` to start the server, go to [localhost:3000](http://localhost:3000/explorer) and add a *Todo* instance with the following data:
+  Run `slc run` to start the server, go to [localhost:3000/explorer](http://localhost:3000/explorer) and add a *Todo* instance with the following data:
 
   ```
   {
