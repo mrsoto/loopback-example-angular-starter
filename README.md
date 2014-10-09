@@ -296,7 +296,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
       $scope.removeTodo = function(item) {
         Todo
-          .deleteById(item.id)
+          .deleteById(item)
           .$promise
           .then(function() {
             getTodos();

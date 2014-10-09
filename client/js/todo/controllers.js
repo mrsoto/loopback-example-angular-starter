@@ -29,7 +29,7 @@ angular
 
     $scope.removeTodo = function(item) {
       Todo
-        .deleteById(item.id)
+        .deleteById(item)
         .$promise
         .then(function() {
           getTodos();
