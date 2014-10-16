@@ -226,7 +226,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   >For more information on application routing, see [AngularUI Router documentation](https://github.com/angular-ui/ui-router).
 
-  >If you're using `jshint`, you can add `"predef": ['angular']` to `.jshintrc` to prevent Angular specific warnings.
+  >If you're using `jshint`, you can add `"predef": ["angular"]` to `.jshintrc` to prevent Angular specific warnings.
 
   Then add `apps.js` as a dependency in `index.html`:
 
