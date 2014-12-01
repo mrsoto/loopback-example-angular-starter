@@ -23,7 +23,7 @@ In addition, you will need a basic understanding of:
 
 If you just want to see the example in action, do this:
 
-```
+```bash
 git clone https://github.com/strongloop/loopback-example-angular-starter
 cd loopback-example-angular-starter
 npm install
@@ -39,7 +39,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 2. **Configure db.json.**
 
   Edit `server/datasources.json` to look like:
-  ```
+  ```json
   {
     "db": {
       ...
@@ -57,7 +57,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   Run `slc run` to start the server, go to [localhost:3000/explorer](http://localhost:3000/explorer) and add a *Todo* instance with the following data:
 
-  ```
+  ```json
   {
     "content": "Buy eggs"
   }
@@ -65,7 +65,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   Verify that model has been inserted by opening `db.json` (it will be created where you ran `slc run`). You should see this:
 
-  ```
+  ```json
   {
     "ids": {
       "User": 1,
@@ -94,7 +94,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   Create `.bowerrc` in the project root with the following contents:
 
-  ```
+  ```json
   {
     "directory": "client/vendor"
   }
@@ -110,7 +110,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   In the `client` directory with the following contents:
 
-  ```
+  ```html
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -146,7 +146,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   Create a `css` directory inside the `client` directory. Inside the newly created directory, create a file named `style.css` with the following contents:
 
-  ```
+  ```css
   body {
     padding-top:50px;
   }
@@ -159,7 +159,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   Modify `index.html` to look like:
 
-  ```
+  ```html
   ...
   <title>LoopBack Angular starter example</title>
   ...
@@ -190,7 +190,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   Remove `server/boot/root.js` and modify `server/server.js` to look like:
 
-  ```
+  ```js
   ...
   // -- Mount static files here--
   // All static middleware should be registered at the end, as all requests
@@ -205,7 +205,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   In the `client` directory, create another directory named `js`. Inside the `js` directory, create a file named `app.js` with the following contents:
 
-  ```
+  ```js
   'use strict';
 
   angular
@@ -230,7 +230,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   Then add `apps.js` as a dependency in `index.html`:
 
-  ```
+  ```html
   ...
   <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="js/app.js"></script>
@@ -241,7 +241,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   In `client/js`, create a directory named `todo`. Inside the `todo` directory, create another directory named `templates`. In the `templates` directory, create a file named `todo.html` with the following contents:
 
-  ```
+  ```html
   <h1>Todo list</h1>
   <hr>
   <form name="todoForm" novalidate ng-submit="addTodo()">
@@ -270,7 +270,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   In `client/js/todo`, create `controllers.js` with the following contents:
 
-  ```
+  ```js
   'use strict';
 
   angular
@@ -316,7 +316,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   Then add `controllers.js` as a dependency in `index.html`:
 
-  ```
+  ```html
   ...
   <script src="js/app.js"></script>
   <script src="js/todo/controllers.js"></script>
@@ -335,7 +335,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   Next, declare `lbServices` as a dependency in `client/js/app.js`:
 
-  ```
+  ```js
   ...
   angular
     .module('app', [
@@ -347,7 +347,7 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   Then add `lb-services.js` as a dependency in `index.html`:
 
-  ```
+  ```html
   ...
   <script src="js/todo/services.js"></script>
   <script src="js/common/lb-services.js"></script>
