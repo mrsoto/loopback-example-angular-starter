@@ -349,7 +349,6 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   ```html
   ...
-  <script src="js/todo/services.js"></script>
   <script src="js/common/lb-services.js"></script>
   ...
   ```
