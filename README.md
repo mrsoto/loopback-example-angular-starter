@@ -357,5 +357,24 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   From the project root, enter `slc run` and browse to [localhost:3000](http://localhost:3000) to view the application.
 
-##More information
+#Optional
+
+##Build automation
+You can ease development by having [`gulp`](http://gulpjs.com/) perform tedious
+tasks such as compiling less files or refreshing your browser when you change
+static assets.
+
+1. Add a [`gulpfile`](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/gulpfile.js) to your project
+2. Install [`gulp` and related dependencies](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/package.json#L25-L31) as `devDependencies`
+3. Import the dependencies into [`gulpfile.js`](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/gulpfile.js#L1-L5)
+4. Create a [`default` task that runs the `build`, `serve` and `watch` tasks](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/gulpfile.js#L7-L11)
+5. Create the [`build` task](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/gulpfile.js#L13-L19). This task compiles the less files, minifies the resulting css, and finally send the resulting css to the `livereload` plugin
+6. Create the [`serve` task](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/gulpfile.js#L21-L23). This task restarts the web server whenever a file changes.
+7. Create the [`watch` task](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/gulpfile.js#L25-L28). This tells gulp to recompile the less files and reload the browser whenever less files are modified
+8. Test it out by running `gulp` from the project root. Once the server is up and the home page has finished loading, modify [`global.less`](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/client/less/globals.less) and you should see your changes reflected in the browser automatically.
+
+###Note
+You will need the [`livereload plugin`](http://livereload.com/) for your specific browser for live reload to work.
+
+#More information
 For more information, see the [LoopBack Angular SDK documentation](http://docs.strongloop.com/display/LB/AngularJS+JavaScript+SDK).
