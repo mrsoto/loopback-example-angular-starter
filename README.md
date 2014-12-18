@@ -371,10 +371,13 @@ static assets.
 5. Create the [`build` task](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/gulpfile.js#L13-L19). This task compiles the less files, minifies the resulting css, and finally send the resulting css to the `livereload` plugin
 6. Create the [`serve` task](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/gulpfile.js#L21-L23). This task restarts the web server whenever a file changes.
 7. Create the [`watch` task](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/gulpfile.js#L25-L28). This tells gulp to recompile the less files and reload the browser whenever less files are modified
-8. Test it out by running `gulp` from the project root. Once the server is up and the home page has finished loading, modify [`global.less`](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/client/less/globals.less) and you should see your changes reflected in the browser automatically.
+7. Create a [`build:lb-services` task](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/gulpfile.js#L19-L24). This tells gulp to minify and bundle all the javascript files into `bundle.js`.
+8. Create a [`bundle` task](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/gulpfile.js#L34-L40). This tells gulp to minify and bundle all the javascript files into `bundle.js`. **See note section**
+9. Test it out by running `gulp` from the project root. Once the server is up and the home page has finished loading, modify [`global.less`](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/client/less/globals.less) and you should see your changes reflected in the browser automatically.
 
 ###Note
-You will need the [`livereload plugin`](http://livereload.com/) for your specific browser for live reload to work.
+- You will need the [`livereload plugin`](http://livereload.com/) for your specific browser for live reload to work.
+- To test `bundle.js`, you will need to [comment these lines](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/client/index.html#L38-L40) and [uncomment this line](https://github.com/strongloop/loopback-example-angular-starter/blob/feature/add-gulp-example/client/index.html#L41)
 
 #More information
 For more information, see the [LoopBack Angular SDK documentation](http://docs.strongloop.com/display/LB/AngularJS+JavaScript+SDK).
