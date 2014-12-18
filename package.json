@@ -26,7 +26,9 @@
     "gulp": "^3.8.10",
     "gulp-less": "^2.0.1",
     "gulp-livereload": "^3.0.2",
+    "gulp-loopback-sdk-angular": "^0.1.3",
     "gulp-minify-css": "^0.3.11",
-    "gulp-nodemon": "^1.0.4"
+    "gulp-nodemon": "^1.0.4",
+    "gulp-rename": "^1.2.0"
   }
 }
