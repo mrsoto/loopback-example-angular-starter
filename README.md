@@ -357,5 +357,10 @@ Otherwise, follow the steps below to create the application from scratch.  The e
 
   From the project root, enter `slc run` and browse to [localhost:3000](http://localhost:3000) to view the application.
 
+#Notes
+- [Build automation](http://en.wikipedia.org/wiki/Build_automation) is purposely left out in this example to things simple
+- For real world applications, we recommend using a build system such as [gulp](http://gulpjs.com/) or [grunt](http://gruntjs.com/)
+- See [loopback-faq-build-automation](https://github.com/strongloop/loopback-faq-build-automation)
+
 #More information
 For more information, see the [LoopBack Angular SDK documentation](http://docs.strongloop.com/display/LB/AngularJS+JavaScript+SDK).
