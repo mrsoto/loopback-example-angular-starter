@@ -1,9 +1,9 @@
-##Overview
+#Overview
 This example demonstrates how to use [LoopBack](http://loopback.io) with [AngularJS](http://angularjs.org/).
 
 It's a simple "To Do" list application that uses LoopBack on the back end and AngularJS on the front end.
 
-##Prerequisites
+#Prerequisites
 Before starting, makes sure you've followed [Getting Started with LoopBack](http://docs.strongloop.com/display/LB/Getting+started+with+LoopBack) to install Node and LoopBack. 
 
 Install [Bower](http://bower.io/) to manage front-end dependencies:
@@ -19,7 +19,7 @@ In addition, you will need a basic understanding of:
 - Bower
 - [LoopBack models](http://docs.strongloop.com/display/LB/Working+with+models)
 
-##Procedure
+#Procedure
 
 If you just want to see the example in action, do this:
 
