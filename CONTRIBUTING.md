@@ -14,7 +14,7 @@ Contributing to `loopback-example-angular-starter` is easy. In a few simple step
   * Adhere to code style outlined in the [Google C++ Style Guide][] and
     [Google Javascript Style Guide][].
 
-  * Sign the [Contributor License Agreement](https://cla.strongloop.com/strongloop/loopback-example-angular-starter)
+  * Sign the [Contributor License Agreement](https://cla.strongloop.com/agreements/strongloop/loopback-example-angular-starter)
 
   * Submit a pull request through Github.
 
