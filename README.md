@@ -180,11 +180,11 @@ Otherwise, follow the steps below to create the application from scratch.  The e
       <div ui-view></div>
     </div>
 
-    <script src="vendor/jquery/dist/jquery.js"></script>
-    <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="vendor/angular/angular.js"></script>
-    <script src="vendor/angular-resource/angular-resource.js"></script>
-    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-resource/angular-resource.min.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
   </body>
   ```
 
